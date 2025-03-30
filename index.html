@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Intro Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="introWrap">
+        <div id="title">
+            <h1>Canvas Playground</h1>
+            <button id="startBtn">Let's Play</button>
+        </div>
+        <canvas id="introLeft"></canvas>
+        <canvas id="introRight"></canvas>
+    </div>
+
+    <div id="mainPage" style="display: none;">
+    <nav>
+        <button class="modeBtn" data-mode="illusion">Illusion</button>
+        <button class="modeBtn" data-mode="ripples">Ripples</button>
+        <button class="modeBtn" data-mode="bounce">Bounce</button>
+        <button class="modeBtn" data-mode="stars">Stars</button>
+    </nav>
+    <div id="modeText" class="mode-text">Welcome! Choose a mode to begin.</div>  
+    <canvas id="canvas"></canvas>
+      <button id="resetBtn">Reset</button>
+</div>
+
+<script src="script.js"></script>
+<script src="intro.js"></script>
+<script src="modes.js"></script>
+</body>
+</html>

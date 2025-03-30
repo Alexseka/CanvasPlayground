@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    font-family: montserrat;
+    text-align: center;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20pt;
+    height: 100vh;
+}
+
+#introWrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    position: relative;
+    text-align: center;
+}
+#title h1{
+    font-family: cooper;
+    filter: drop-shadow(0 5px 0 grey);}
+#startBtn{
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    filter: drop-shadow(0 6px 0 grey);
+  color:#404040;
+}
+button{
+  font-family:montserrat;
+    border: none;
+    border-radius: 25px;
+}
+
+#startBtn:hover{
+  background-color: silver;
+  color:black;
+  padding-top:8px;
+  margin-top:43px;
+  filter: drop-shadow(0 3px 0 #404040);
+}
+
+
+canvas{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 20vw; 
+}
+
+#introLeft{
+    left: 0;
+}
+
+#introRight{
+    right: 0;
+}
+
+#canvas {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+}
+
+#mainPage {
+    display: none;
+    position: relative;
+}
+
+nav {
+    display: flex;;
+    position: absolute;
+    top: -50vh;
+    transform: translateX(-50%);
+    z-index: 10;
+ 
+}
+
+.modeBtn {
+    margin: 5px;
+    padding: 1vh 9vw;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    transition-property: padding background font-size;
+    transition-duration: 1s;
+}
+
+.modeBtn:hover {
+  background-color: transparent;
+  color:cadetBlue;
+  padding:.5vh 11vw;
+  font-size: 30px;
+}
+#modeText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: black;
+    z-index: 2;
+    width: 40vw;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    pointer-events:none;
+}
+#resetBtn {
+    position: absolute;
+    bottom: -47vh;
+    right: -47vw;
+    padding: 10px 20px;
+    font-size: 20px;
+  font-weight:500;
+    background-color: lightGrey;
+    color: black;
+    border: none;
+    transition-property: background font-size;
+    transition-duration: .5s;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 10;  
+    display: none;
+}
+
+#resetBtn:hover {
+    background-color: red;
+  color:white;
+}
